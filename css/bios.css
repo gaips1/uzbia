@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #151719
+}
+
+
+.ava {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  border-radius: 90px;
+  height: 250px;
+}
+
+.krat {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background: #90ee90;
+  height: 250px;
+  width: 350px;
+  border-radius: 15px;
+}
+
+.krat h1 {
+  font-family: "Poetsen One", sans-serif;
+  position: absolute;
+  margin: 5px 80px auto;
+  display: block;
+  color: #228b22;
+  font-size: 40px
+}
+
+.krat h2 {
+  font-family: "Poetsen One", sans-serif;
+  position: absolute;
+  margin: 50px 97px auto;
+  display: block;
+  color: #228b22;
+  font-size: 25px
+}
+
+.krat ul {
+  font-family: "Poetsen One", sans-serif;
+  position: absolute;
+  margin: 85px auto auto;
+  display: block;
+  color: #228b22;
+  font-size: 20px
+}
+
+.big {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #90ee90;
+  height: 200px;
+  width: 1000px;
+  border-radius: 15px;
+}
+
+.big p {
+  font-family: "Poetsen One", sans-serif;
+  position: absolute;
+  margin: 20px 20px auto;
+  display: block;
+  color: #228b22;
+  font-size: 20px
+}
