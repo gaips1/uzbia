@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Mono:wght@100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+.marquee {
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  color: #42aaff;
+  font-family: "Noto Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 35px;
+  white-space: nowrap;
+  animation: marquee 10s infinite linear; /* notice the infinite */
+}
+.marquee:after{
+    content: " Слава узбии! Слава узбии! Слава узбии! Слава узбии! Слава узбии! Слава узбии! Слава узбии! ";
+}
+
+.marquee-container{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.marquee-container1{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.marquee1 {
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  color: #42aaff;
+  font-family: "Noto Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 35px;
+  white-space: nowrap;
+  animation: marquee1 10s infinite linear; /* notice the infinite */
+}
+
+.marquee1:after{
+    content: " Слава узбии! Слава узбии! Слава узбии! Слава узбии! Слава узбии! Слава узбии! Слава узбии! ";
+}
+
+@keyframes marquee{
+    0% {
+        transform: translateX(-50%)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+@keyframes marquee1{
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-50%)
+    }
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #151719
+}
+
+.gaipsb {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 250px;
+  width: 15%;
+  transition: background-color 0.3s ease, height 0.3s ease, width 0.3s ease;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.gaipsb img {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 65px;
+}
+.gaipsb p {
+  font-family: "Poetsen One", sans-serif;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #7fc7ff;
+  font-size: 40px
+}
+
+.gaipsb:hover {
+  height: 240px;
+  width: 14%;
+}
