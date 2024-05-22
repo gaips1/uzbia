@@ -3,7 +3,7 @@
 
 .marquee {
   height: 50px;
-  position: absolute;
+  position: fixed;
   top: 0px;
   color: #42aaff;
   font-family: "Noto Sans Mono", monospace;
@@ -31,7 +31,7 @@
 
 .marquee1 {
   height: 50px;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   color: #42aaff;
   font-family: "Noto Sans Mono", monospace;
@@ -71,33 +71,30 @@ html, body {
 }
 
 .gaipsb {
-  position: absolute;
-  transform: translate(-50%, -50%);
+  position: fixed;
   height: 250px;
-  width: 15%;
-  transition: background-color 0.3s ease, height 0.3s ease, width 0.3s ease;
+  width: 290px;
+  transition: transform 0.3s ease;
   border-radius: 35px;
   cursor: pointer;
 }
 
 .gaipsb img {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  margin-top: 15px;
+  margin-left: 80px;
   border-radius: 65px;
 }
 .gaipsb p {
   font-family: "Poetsen One", sans-serif;
-  position: absolute;
-  top: 60%;
-  left: 50%;
+  position: fixed;
+  margin-top: 190px;
+  margin-left: 145px;
   transform: translate(-50%, -50%);
   color: #7fc7ff;
   font-size: 40px
 }
 
 .gaipsb:hover {
-  height: 240px;
-  width: 14%;
+  transform: scale(0.9)
 }
