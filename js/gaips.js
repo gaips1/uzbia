@@ -2,14 +2,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const gaipss = document.getElementById("gaipss");
   const gaipsy = document.getElementById("gaipsy");
   const gaipst = document.getElementById("gaipst");
-
+  const back = document.getElementById("back");
   gaipss.addEventListener("click", () => {
-      window.location.href = "https://steamcommunity.com/id/dexonbot/";
+      window.location.href = "https://steamcommunity.com/id/gaips/";
   });
   gaipsy.addEventListener("click", () => {
-      window.location.href = "https://www.youtube.com/channel/UCkihKmlWLJyOGpk4G43hnfA";
+      window.location.href = "https://www.youtube.com/channel/UCIXLcJwQqJt3g_cqcczkgZw";
   });
   gaipst.addEventListener("click", () => {
-      window.location.href = "https://t.me/drom6906";
+      window.location.href = "https://t.me/gaips";
+  });
+  back.addEventListener("click", () => {
+      window.location.href = "index.html";
   });
 });
