@@ -1,15 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const droms = document.getElementById("droms");
-  const dromy = document.getElementById("dromy");
-  const dromt = document.getElementById("dromt");
-
-  droms.addEventListener("click", () => {
-      window.location.href = "https://steamcommunity.com/id/dexonbot/";
+  const skrepkas = document.getElementById("skrepkas");
+  const skrepkay = document.getElementById("skrepkay");
+  const skrepkat = document.getElementById("skrepkat");
+  const back = document.getElementById("back");
+  skrepkas.addEventListener("click", () => {
+      window.location.href = "https://steamcommunity.com/id/skrepka4yrka/";
   });
-  dromy.addEventListener("click", () => {
-      window.location.href = "https://www.youtube.com/channel/UCkihKmlWLJyOGpk4G43hnfA";
+  skrepkay.addEventListener("click", () => {
+      window.location.href = "https://www.youtube.com/channel/UCmWH4KQz5Aec1p_E6-G3wjA";
   });
-  dromt.addEventListener("click", () => {
-      window.location.href = "https://t.me/drom6906";
+  skrepkat.addEventListener("click", () => {
+      window.alert("У него нет тг :(")
+  });
+  back.addEventListener("click", () => {
+      window.location.href = "index.html";
   });
 });
