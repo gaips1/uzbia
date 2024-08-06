@@ -4,11 +4,12 @@ import gaipsPic from '/public/gaips.png'
 import youtubePic from '/public/youtube.png'
 import steamPic from '/public/steam.png'
 import telegramPic from '/public/telegram.png'
+import Link from 'next/link'
 export default function gaipsPage() {
   return (
     <main>
-      <button className='fixed overflow-hidden items-center h-14 w-28 font-main text-4xl cursor-pointer bg-blue-400 rounded-xl hover:bg-blue-600 m-5'
-      onClick={function () {window.location.href = "/"}}>Назад</button>
+      <Link href="/" className='fixed overflow-hidden items-center h-14 w-28 font-main text-4xl p-2 cursor-pointer bg-blue-400 rounded-xl hover:bg-blue-600 m-5'
+      >Назад</Link>
       <div className='flex flex-col items-center min-h-screen justify-center font-main'>
         <title>Gaips Bio</title>
         <div className='flex flex-row justify-around items-center font-main'>
@@ -34,9 +35,9 @@ export default function gaipsPage() {
             Скопировал и оцифровал почти каждого участника УЗБИИ и перенёс их в специальные оболочки <u title="Нейросетевая Экспертная Компьютерная Интеллектуальная Технология">Некита</u>.</p>
         </div>
         <footer className='flex flex-row justify-evenly items-center'>
-          <Image src={steamPic} height={200} className='mr-48 cursor-pointer ' alt="steam" onClick={function () {window.location.href = "https://steamcommunity.com/id/gaips/"}}/>
-          <Image src={youtubePic} height={200} className='mr-48 cursor-pointer' alt="youtube" onClick={function () {window.location.href = "https://www.youtube.com/channel/UCIXLcJwQqJt3g_cqcczkgZw"}}/>
-          <Image src={telegramPic} height={160} className='rounded-[50px] cursor-pointer' alt="telegram" onClick={function () {window.location.href = "https://t.me/gaips"}}/>
+          <Link href="https://steamcommunity.com/id/gaips/" target='_blank' rel='noopener noreferrer'><Image src={steamPic} height={200} className='mr-48 cursor-pointer ' alt="steam"/></Link>
+          <Link href="https://www.youtube.com/channel/UCIXLcJwQqJt3g_cqcczkgZw" target='_blank' rel='noopener noreferrer'><Image src={youtubePic} height={200} className='mr-48 cursor-pointer' alt="youtube" /></Link>
+          <Link href="https://t.me/gaips" target='_blank' rel='noopener noreferrer'><Image src={telegramPic} height={160} className='mr-48 cursor-pointer rounded-[50px]' alt="telegram" /></Link>
         </footer>
       </div>
     </main>

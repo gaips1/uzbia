@@ -4,11 +4,12 @@ import skrepkaPic from '/public/skrepka.png'
 import youtubePic from '/public/youtube.png'
 import steamPic from '/public/steam.png'
 import telegramPic from '/public/telegram.png'
+import Link from 'next/link'
 export default function nekitPage() {
   return (
     <main>
-      <button className='fixed overflow-hidden items-center h-14 w-28 font-main text-4xl cursor-pointer bg-skrepka rounded-xl hover:rotate-180 m-5'
-      onClick={function () {window.location.href = "/"}}>Назад</button>
+      <Link href="/" className='fixed overflow-hidden items-center h-14 w-28 font-main text-4xl p-2 cursor-pointer bg-skrepka rounded-xl hover:rotate-180 m-5'
+      >Назад</Link>
       <div className='flex flex-col items-center min-h-screen justify-center font-main'>
         <title>Skrepka Bio</title>
         <div className='flex flex-row justify-around items-center font-main'>
@@ -35,9 +36,10 @@ export default function nekitPage() {
         </p>
         </div>
         <footer className='flex flex-row justify-evenly items-center'>
-          <Image src={steamPic} height={200} className='mr-48 cursor-pointer ' alt="steam" onClick={function () {window.location.href = "https://steamcommunity.com/id/skrepka4yrka/"}}/>
-          <Image src={youtubePic} height={200} className='mr-48 cursor-pointer' alt="youtube" onClick={function () {window.location.href = "https://www.youtube.com/channel/UCmWH4KQz5Aec1p_E6-G3wjA"}}/>
-          <Image src={telegramPic} height={160} className='rounded-[50px] cursor-pointer' alt="telegram" onClick={function () {alert("Он скрыл свой юз в тг :(")}}/>
+          <Link href="https://steamcommunity.com/id/skrepka4yrka/" target='_blank' rel='noopener noreferrer'><Image src={steamPic} height={200} className='mr-48 cursor-pointer ' alt="steam"/></Link>
+          <Link href="https://www.youtube.com/channel/UCmWH4KQz5Aec1p_E6-G3wjA" target='_blank' rel='noopener noreferrer'><Image src={youtubePic} height={200} className='mr-48 cursor-pointer' alt="youtube" /></Link>
+          <Image src={telegramPic} height={160} className='rounded-[50px] cursor-pointer
+          ' alt="telegram" onClick={function () {alert("Он скрыл свой юз в тг :(")}}/>
         </footer>
       </div>
     </main>

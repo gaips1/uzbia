@@ -4,11 +4,12 @@ import dromPic from '/public/drom.png'
 import youtubePic from '/public/youtube.png'
 import steamPic from '/public/steam.png'
 import telegramPic from '/public/telegram.png'
+import Link from 'next/link'
 export default function dromPage() {
   return (
     <main>
-      <button className='fixed overflow-hidden items-center h-14 w-28 font-main text-4xl cursor-pointer bg-green-400 rounded-xl hover:bg-green-600 m-5'
-      onClick={function () {window.location.href = "/"}}>Назад</button>
+      <Link href="/" className='fixed overflow-hidden items-center h-14 w-28 font-main text-4xl p-2 cursor-pointer bg-green-400 rounded-xl hover:bg-green-700 m-5'
+      >Назад</Link>
       <div className='flex flex-col items-center min-h-screen justify-center font-main'>
         <title>Drom Bio</title>
         <div className='flex flex-row justify-around items-center font-main'>
@@ -32,9 +33,9 @@ export default function dromPage() {
           Кроме того, у Дрома есть навыки моделирования и анимации в программе Blender, а также умение высасывать навыки у своих друзей.</p>
         </div>
         <footer className='flex flex-row justify-evenly items-center'>
-          <Image src={steamPic} height={200} className='mr-48 cursor-pointer ' alt="steam" onClick={function () {window.location.href = "https://steamcommunity.com/id/dexonbot/"}}/>
-          <Image src={youtubePic} height={200} className='mr-48 cursor-pointer' alt="youtube" onClick={function () {window.location.href = "https://www.youtube.com/channel/UCkihKmlWLJyOGpk4G43hnfA"}}/>
-          <Image src={telegramPic} height={160} className='rounded-[50px] cursor-pointer' alt="telegram" onClick={function () {window.location.href = "https://t.me/drom6906"}}/>
+          <Link href="https://steamcommunity.com/id/dexonbot/" target='_blank' rel='noopener noreferrer'><Image src={steamPic} height={200} className='mr-48 cursor-pointer ' alt="steam"/></Link>
+          <Link href="https://www.youtube.com/channel/UCkihKmlWLJyOGpk4G43hnfA" target='_blank' rel='noopener noreferrer'><Image src={youtubePic} height={200} className='mr-48 cursor-pointer' alt="youtube" /></Link>
+          <Link href="https://t.me/drom6906" target='_blank' rel='noopener noreferrer'><Image src={telegramPic} height={160} className='mr-48 cursor-pointer rounded-[50px]' alt="telegram" /></Link>
         </footer>
       </div>
     </main>
