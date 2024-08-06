@@ -29,7 +29,7 @@ export default function dexonPage() {
         </div>
         <div className='bg-red-600 rounded-3xl block h-52 w-[1000px] m-10 p-7 font-oswald text-3xl'>
           <p>
-            Зашёл в узбию одновременно с <a href="/drom" className='underline'>Дромом</a>.
+            Зашёл в узбию одновременно с <Link href="/drom" className='underline'>Дромом</Link>.
             Пишет крутые песенки (к сожалению без вокала). Был назван фурри из-за того что играл в фурри плейс в роблоксе.
             Обладатель пк за миллион, в который входит ссд на 2ТБ, ртх 4090 и гипермощный процессор (intel core I99999-K).
             Делает музыку по 10 лет. Ржачно бомбит.

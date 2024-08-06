@@ -29,8 +29,8 @@ export default function nekitPage() {
         </div>
         <div className='bg-neutral-700 rounded-3xl block h-52 w-[1000px] m-10 p-3 font-oswald text-[30px]'>
         <p>
-            Был приглашён <a href="/drom" className='underline'>Дромом</a> как замена <a href="/dexon" className='underline'>Дехона</a> в момент его временного выхода из узбии. Прошёл селесту без урона (наверное). Дотер. 1000-7 гуль. Самый старший в узбии. Мистер 1488 пинга.
-            Про в апексе, любит игры с крутым мувментом. Постоянно отшивает <a href="/gaips" className='underline'>Гаипса</a>.
+            Был приглашён <Link href="/drom" className='underline'>Дромом</Link> как замена <Link href="/dexon" className='underline'>Дехона</Link> в момент его временного выхода из узбии. Прошёл селесту без урона (наверное). Дотер. 1000-7 гуль. Самый старший в узбии. Мистер 1488 пинга.
+            Про в апексе, любит игры с крутым мувментом. Постоянно отшивает <Link href="/gaips" className='underline'>Гаипса</Link>.
             Обожает критиковать всё подряд. Кушает пельмени со сгущёнкой.
         </p>
         </div>
