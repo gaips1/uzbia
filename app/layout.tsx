@@ -6,7 +6,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Uzbia Bio",
-  description: "Slava Uzbii!",
+  description: "Слава узбии!",
+  icons: {"icon": "/public/uzbia.png",shortcut: '/public/uzbia.png', apple: '/public/uzbia.png',}
+  
 };
 
 export default function RootLayout({
