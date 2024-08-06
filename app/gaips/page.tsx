@@ -37,7 +37,7 @@ export default function gaipsPage() {
         <footer className='flex flex-row justify-evenly items-center'>
           <Link href="https://steamcommunity.com/id/gaips/" target='_blank' rel='noopener noreferrer'><Image src={steamPic} height={200} className='mr-48 cursor-pointer ' alt="steam"/></Link>
           <Link href="https://www.youtube.com/channel/UCIXLcJwQqJt3g_cqcczkgZw" target='_blank' rel='noopener noreferrer'><Image src={youtubePic} height={200} className='mr-48 cursor-pointer' alt="youtube" /></Link>
-          <Link href="https://t.me/gaips" target='_blank' rel='noopener noreferrer'><Image src={telegramPic} height={160} className='mr-48 cursor-pointer rounded-[50px]' alt="telegram" /></Link>
+          <Link href="https://t.me/gaips" target='_blank' rel='noopener noreferrer'><Image src={telegramPic} height={160} className='cursor-pointer rounded-[50px]' alt="telegram" /></Link>
         </footer>
       </div>
     </main>

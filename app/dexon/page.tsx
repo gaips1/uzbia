@@ -38,7 +38,7 @@ export default function dexonPage() {
         <footer className='flex flex-row justify-evenly items-center'>
           <Link href="https://steamcommunity.com/profiles/76561199039237595" target='_blank' rel='noopener noreferrer'><Image src={steamPic} height={200} className='mr-48 cursor-pointer ' alt="steam"/></Link>
           <Link href="https://www.youtube.com/@dexon9046" target='_blank' rel='noopener noreferrer'><Image src={youtubePic} height={200} className='mr-48 cursor-pointer' alt="youtube" /></Link>
-          <Link href="https://t.me/Dexoneer" target='_blank' rel='noopener noreferrer'><Image src={telegramPic} height={160} className='mr-48 cursor-pointer rounded-[50px]' alt="telegram" /></Link>
+          <Link href="https://t.me/Dexoneer" target='_blank' rel='noopener noreferrer'><Image src={telegramPic} height={160} className='cursor-pointer rounded-[50px]' alt="telegram" /></Link>
         </footer>
       </div>
     </main>
